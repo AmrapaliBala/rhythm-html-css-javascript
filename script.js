@@ -35,18 +35,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
     let songitem = Array.from(document.getElementsByClassName('songitem'));
 
-    let songs = [
-        { songName: "Mystery of Love", filepath: "song/0.mp3", coverpath: "covers/0.JPG" },
-        { songName: "Zamaana Lage", filepath: "song/1.mp3", coverpath: "covers/1.JPG" },
-        { songName: "Salvatore", filepath: "song/2.mp3", coverpath: "covers/2.JPG" },
-        { songName: "Heer", filepath: "song/3.mp3", coverpath: "covers/3.JPG" },
-        { songName: "Bhalobashar morshum", filepath: "song/4.mp3", coverpath: "covers/4.JPG" },
-        { songName: "Apocalypse", filepath: "song/5.mp3", coverpath: "covers/5.JPG" },
-        { songName: "Jhol", filepath: "song/6.mp3", coverpath: "covers/6.JPG" },
-        { songName: "Beche thakar gan", filepath: "song/7.mp3", coverpath: "covers/7.JPG" },
-        { songName: "Yellow", filepath: "song/8.mp3", coverpath: "covers/8.JPG" },
-        { songName: "Zamaana Lage", filepath: "song/9.mp3", coverpath: "covers/9.JPG" },
-    ]
+  let songs = [
+  { songName: "Mystery of Love", filepath: "song/0.mp3", coverpath: "covers/0.jpg" },
+  { songName: "Zamaana Lage", filepath: "song/1.mp3", coverpath: "covers/1.jpg" },
+  { songName: "Salvatore", filepath: "song/2.mp3", coverpath: "covers/2.jpg" },
+  { songName: "Heer", filepath: "song/3.mp3", coverpath: "covers/3.jpg" },
+  { songName: "Bhalobashar morshum", filepath: "song/4.mp3", coverpath: "covers/4.jpg" },
+  { songName: "Apocalypse", filepath: "song/5.mp3", coverpath: "covers/5.jpg" },
+  { songName: "Jhol", filepath: "song/6.mp3", coverpath: "covers/6.jpg" },
+  { songName: "Beche thakar gan", filepath: "song/7.mp3", coverpath: "covers/7.jpg" },
+  { songName: "Yellow", filepath: "song/8.mp3", coverpath: "covers/8.jpg" },
+  { songName: "Zamaana Lage", filepath: "song/9.mp3", coverpath: "covers/9.jpg" },
+];
+
 
     songitem.forEach((element, i) => {
         element.getElementsByTagName("img")[0].src = songs[i].coverpath;
